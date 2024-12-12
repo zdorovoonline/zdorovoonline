@@ -67,12 +67,12 @@
       "underlineLink": true,
       "opacityOverlay": "0",
       "bgOpacity": "100",
-      "text": "We use cookies to give you the best experience. Read our <a href='privacy.html'>cookie policy</a>.",
-      "textButton": "GOT IT",
+      "text": "Мы используем файлы cookie, чтобы предоставить вам наилучший опыт. Ознакомьтесь с <a href='privacy.html'>нашей политикой</a>.",
+      "textButton": "Понятно",
       "rejectText": "REJECT"
     },
     "favicon": false,
-    "mbrsiteDomain": "uczdxllvfa",
+    "mbrsiteDomain": "shtjyo22xr",
     "usedWebp": false,
     "robotsSwitcher": false,
     "sitemapSwitcher": false,
@@ -86,7 +86,7 @@
     "index.html": {
       "settings": {
         "main": true,
-        "title": "Home",
+        "title": "Здорово",
         "meta_descr": "Чувствуете усталость и упадок сил?\nНачните новый год здорово с индивидуальным планом чекапа!",
         "header_custom": "",
         "footer_custom": "",

@@ -25,27 +25,27 @@ body {
 }
 .display-4 {
   font-family: 'Poppins', sans-serif;
-  font-size: 1.125rem;
+  font-size: 1.4rem;
   line-height: 1.5;
 }
 .display-4 > .mbr-iconfont {
-  font-size: 1.40625rem;
+  font-size: 1.75rem;
 }
 .display-5 {
   font-family: 'Inter', sans-serif;
-  font-size: 3.5rem;
+  font-size: 2.8rem;
   line-height: 1.14;
 }
 .display-5 > .mbr-iconfont {
-  font-size: 4.375rem;
+  font-size: 3.5rem;
 }
 .display-7 {
   font-family: 'Poppins', sans-serif;
-  font-size: 2rem;
+  font-size: 1.8rem;
   line-height: 1.3;
 }
 .display-7 > .mbr-iconfont {
-  font-size: 2.5rem;
+  font-size: 2.25rem;
 }
 /* ---- Fluid typography for mobile devices ---- */
 /* 1.4 - font scale ratio ( bootstrap == 1.42857 ) */
@@ -69,19 +69,19 @@ body {
     line-height: calc( 1.3 * (2.05rem + (4 - 2.05) * ((100vw - 20rem) / (48 - 20))));
   }
   .display-4 {
-    font-size: 0.9rem;
-    font-size: calc( 1.04375rem + (1.125 - 1.04375) * ((100vw - 20rem) / (48 - 20)));
-    line-height: calc( 1.4 * (1.04375rem + (1.125 - 1.04375) * ((100vw - 20rem) / (48 - 20))));
+    font-size: 1.12rem;
+    font-size: calc( 1.14rem + (1.4 - 1.14) * ((100vw - 20rem) / (48 - 20)));
+    line-height: calc( 1.4 * (1.14rem + (1.4 - 1.14) * ((100vw - 20rem) / (48 - 20))));
   }
   .display-5 {
-    font-size: 2.8rem;
-    font-size: calc( 1.875rem + (3.5 - 1.875) * ((100vw - 20rem) / (48 - 20)));
-    line-height: calc( 1.4 * (1.875rem + (3.5 - 1.875) * ((100vw - 20rem) / (48 - 20))));
+    font-size: 2.24rem;
+    font-size: calc( 1.63rem + (2.8 - 1.63) * ((100vw - 20rem) / (48 - 20)));
+    line-height: calc( 1.4 * (1.63rem + (2.8 - 1.63) * ((100vw - 20rem) / (48 - 20))));
   }
   .display-7 {
-    font-size: 1.6rem;
-    font-size: calc( 1.35rem + (2 - 1.35) * ((100vw - 20rem) / (48 - 20)));
-    line-height: calc( 1.4 * (1.35rem + (2 - 1.35) * ((100vw - 20rem) / (48 - 20))));
+    font-size: 1.44rem;
+    font-size: calc( 1.28rem + (1.8 - 1.28) * ((100vw - 20rem) / (48 - 20)));
+    line-height: calc( 1.4 * (1.28rem + (1.8 - 1.28) * ((100vw - 20rem) / (48 - 20))));
   }
 }
 /* Buttons */
@@ -627,13 +627,13 @@ a:hover {
 }
 .form-control {
   font-family: 'Poppins', sans-serif;
-  font-size: 2rem;
+  font-size: 1.8rem;
   line-height: 1.3;
   font-weight: 400;
   border-radius: 100px !important;
 }
 .form-control > .mbr-iconfont {
-  font-size: 2.5rem;
+  font-size: 2.25rem;
 }
 .form-control:hover,
 .form-control:focus {
@@ -642,12 +642,12 @@ a:hover {
 }
 .form-control:-webkit-input-placeholder {
   font-family: 'Poppins', sans-serif;
-  font-size: 2rem;
+  font-size: 1.8rem;
   line-height: 1.3;
   font-weight: 400;
 }
 .form-control:-webkit-input-placeholder > .mbr-iconfont {
-  font-size: 2.5rem;
+  font-size: 2.25rem;
 }
 blockquote {
   border-color: #272b2e;
@@ -979,10 +979,10 @@ img,
   align-items: center;
   border-radius: 12rem;
   margin: 1rem 80px 0;
-  background-color: #ffffff;
+  background-color: #1d4b82;
   box-shadow: none;
   position: relative;
-  border: 1px solid #1e2124;
+  border: 1px solid #1d4b82;
 }
 @media (max-width: 992px) {
   .cid-ugTZ7uVwc1 .menu-container {
@@ -1018,7 +1018,7 @@ img,
   border-radius: 1.5rem;
   transition: .3s all !important;
   min-width: auto;
-  background: #ffffff;
+  background: #1d4b82;
 }
 .cid-ugTZ7uVwc1 .nav-item:focus,
 .cid-ugTZ7uVwc1 .nav-link:focus {
@@ -1185,7 +1185,7 @@ img,
   padding: 0.667em 1.667em;
 }
 .cid-ugTZ7uVwc1 .navbar.navbar-expand-lg .dropdown .dropdown-menu {
-  background: #ffffff;
+  background: #1d4b82;
 }
 .cid-ugTZ7uVwc1 .navbar.navbar-expand-lg .dropdown .dropdown-menu .dropdown-submenu {
   margin: 0;
@@ -1372,7 +1372,7 @@ img,
     width: 100%;
     padding: 1rem;
     border-radius: 1.5rem;
-    background: #ffffff;
+    background: #1d4b82;
   }
   .cid-ugTZ7uVwc1 .navbar-nav .nav-item .nav-link::after {
     margin-left: 10px;
@@ -1523,9 +1523,9 @@ img,
   color: #272b2e;
 }
 .cid-ugTZ8IBj6F {
-  padding-top: 5rem;
+  padding-top: 3rem;
   padding-bottom: 5rem;
-  background-color: #15171a;
+  background-color: #ffffff;
 }
 .cid-ugTZ8IBj6F .mbr-fallback-image.disabled {
   display: none;
@@ -1616,7 +1616,7 @@ img,
   margin-bottom: 0;
 }
 .cid-ugTZ8IBj6F .item .card_1 {
-  background: linear-gradient(315deg, #a672ff, #e6d8ff);
+  background: linear-gradient(315deg, #4b6787, #809ab8);
 }
 .cid-ugTZ8IBj6F .item .card_2 {
   background: linear-gradient(315deg, #7dabab, #bbd3d3);
@@ -1643,12 +1643,12 @@ img,
 }
 .cid-ugTZ8IBj6F .mbr-section-title,
 .cid-ugTZ8IBj6F .mbr-section-btn {
-  color: #ffffff;
+  color: #272b2e;
 }
 .cid-ugTZiJPdJ5 {
   padding-top: 5rem;
   padding-bottom: 5rem;
-  background-color: #15171a;
+  background-color: #1d4b82;
 }
 .cid-ugTZiJPdJ5 .mbr-fallback-image.disabled {
   display: none;

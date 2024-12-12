@@ -57,6 +57,28 @@
     "mcSmartCart": {
       "currency": "USD"
     },
+    "cookiesAlert": {
+      "customDialogSelector": false,
+      "colorText": "#272b2e",
+      "colorBg": "#ffffff",
+      "colorButton": "#272b2e",
+      "rejectColor": "#ffffff",
+      "colorLink": "#f96e47",
+      "underlineLink": true,
+      "opacityOverlay": "0",
+      "bgOpacity": "100",
+      "text": "We use cookies to give you the best experience. Read our <a href='privacy.html'>cookie policy</a>.",
+      "textButton": "GOT IT",
+      "rejectText": "REJECT"
+    },
+    "favicon": false,
+    "mbrsiteDomain": "uczdxllvfa",
+    "usedWebp": false,
+    "robotsSwitcher": false,
+    "sitemapSwitcher": false,
+    "sitemapSwitcherAuto": false,
+    "siteUrl": false,
+    "gdpr": false,
     "uniqCompNum": 1,
     "versionPublish": "5.9.0"
   },
@@ -65,10 +87,11 @@
       "settings": {
         "main": true,
         "title": "Home",
-        "meta_descr": "",
+        "meta_descr": "Чувствуете усталость и упадок сил?\nНачните новый год здорово с индивидуальным планом чекапа!",
         "header_custom": "",
         "footer_custom": "",
-        "html_before": ""
+        "html_before": "",
+        "meta_image": "@PROJECT_PATH@/assets/images/health-1024x576.jpg"
       },
       "components": [
         {

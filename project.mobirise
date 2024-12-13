@@ -1,6 +1,6 @@
 {
   "settings": {
-    "currentPage": "page1.html",
+    "currentPage": "chronicfatiguesyndrome.html",
     "theme": {
       "name": "flexm5",
       "title": "FlexM5",
@@ -1732,14 +1732,14 @@
         }
       ]
     },
-    "page1.html": {
+    "chronicfatiguesyndrome.html": {
       "settings": {
         "title": "Статья о синдроме хронической усталости",
         "meta_descr": "Чувствуете усталость и упадок сил?\nНачните новый год здорово с индивидуальным планом чекапа!",
         "header_custom": "",
         "footer_custom": "",
         "html_before": "",
-        "meta_image": "@PROJECT_PATH@/assets/images/shutterstock-1561815367.webp",
+        "meta_image": "@PROJECT_PATH@/assets/images/8653216522b152183e714ddabd381d33-1000x386.png",
         "order": "1"
       },
       "components": [

@@ -80,7 +80,7 @@
     "sitemapSwitcherAuto": false,
     "siteUrl": false,
     "gdpr": false,
-    "uniqCompNum": 6,
+    "uniqCompNum": 8,
     "versionPublish": "5.9.0"
   },
   "pages": {
@@ -1201,11 +1201,111 @@
           "_sourceTheme": "healthm5",
           "_customHTML": "<section data-bs-version=\"5.1\" class=\"header01 healthm5\" group=\"Headers\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{\n    'mbr-fullscreen': fullScreen,\n    'mbr-parallax-background': bg.parallax}\">\n    <mbr-parameters>\n        <header>Size</header>\n        <input type=\"checkbox\" title=\"Full Screen\" name=\"fullScreen\">\n        <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\" checked>\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"12\" step=\"1\" value=\"3\" condition=\"fullScreen == false\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"12\" step=\"1\" value=\"5\" condition=\"fullScreen == false\">\n        <header>Show/Hide</header>\n        <input type=\"checkbox\" title=\"Title\" name=\"showTitle\" checked>\n        <input type=\"checkbox\" title=\"Description\" name=\"showDesc\">\n        <input type=\"color\" title=\"Description BG\" value=\"#fbfaf9\" name=\"descBg\" condition=\"showDesc\" selected>\n        <input type=\"checkbox\" title=\"Text\" name=\"showText\" checked>\n        <input type=\"checkbox\" title=\"Buttons\" name=\"showButtons\" checked>\n        <input type=\"checkbox\" name=\"showPeople\" title=\"People\" checked>\n        <input type=\"range\" inline title=\"People Amount\" name=\"card\" min=\"1\" max=\"4\" step=\"1\" value=\"4\" condition=\"showPeople\">\n        <input type=\"color\" title=\"People Border\" value=\"#ffffff\" name=\"people\" condition=\"showPeople\" selected>\n        <input type=\"checkbox\" name=\"showRating\" title=\"Rating\" checked>\n        <input type=\"range\" inline title=\"Rating Amount\" name=\"rating\" min=\"1\" max=\"5\" step=\"1\" value=\"5\" condition=\"showRating\">\n        <input type=\"checkbox\" name=\"showPeopleText\" title=\"People Text\" checked>\n        <input type=\"checkbox\" name=\"showImage\" title=\"Image\">\n        <input type=\"color\" title=\"Image BG\" value=\"#fbfaf9\" name=\"imageBorder\" condition=\"showImage\" selected>\n        <input type=\"checkbox\" name=\"showMainImage\" title=\"Main Image\">\n        <input type=\"color\" title=\"Border Color\" value=\"#f96e47\" name=\"border\" selected>\n        <header>Background</header>\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" title=\"Image\" value=\"@ADDONS_PATH@/healthm5/components/_images/background1.jpg\">\n            <input type=\"color\" title=\"Color\" value=\"#ffffff\" selected>\n            <input type=\"video\" title=\"Video\" value=\"https://vimeo.com/428046504\">\n        </fieldset>\n        <header condition=\"bg.type === 'video'\">Fallback Image</header>\n        <input type=\"image\" title=\"Fallback Image\" value=\"@ADDONS_PATH@/healthm5/components/_images/background1.jpg\" name=\"fallBackImage\" condition=\"bg.type === 'video'\">\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\">\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#ffffff\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.8\" condition=\"overlay && bg.type !== 'color'\">\n    </mbr-parameters>\n\n    <div class=\"mbr-fallback-image disabled\" mbr-if=\"bg.type == 'video'\"></div>\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type !== 'color'\" opacity=\"{{overlayOpacity}}\" bg-color=\"{{overlayColor}}\"></div>\n\n    <div mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\">\n        <div class=\"row\">\n            <div class=\"col-12\">\n                <div class=\"content-wrapper\">\n                    <img class=\"main-image\" src=\"@ADDONS_PATH@/healthm5/components/_images/background1.jpg\" alt=\"Mobirise\" mbr-if=\"showMainImage\">\n                    <div class=\"content-wrap\">\n                        <div class=\"desc-wrapper\">\n                            <p class=\"mbr-desc mbr-fonts-style\" mbr-theme-style=\"display-4\" mbr-if=\"showDesc\" data-app-selector=\".mbr-desc, .desc-wrapper\">\n                                Cutting-Edge Device\n                            </p>\n                        </div>\n                        <h1 class=\"mbr-section-title mbr-fonts-style\" data-app-selector=\".mbr-section-title, .mbr-section-btn\" mbr-theme-style=\"display-1\" mbr-if=\"showTitle\">Чувство усталости может быть вызвано как нездоровым образом жизни, так и серьёзными заболеваниями.</h1>\n                        <div class=\"text-wrapper\">\n                            <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .text-wrapper\"><br>Чувствуете ли вы необычную усталость за последнюю неделю, которая влияет на ваше настроение, затрудняет общение с близкими, мешает вашей активности и привычным делам, а также снижает радость от жизни?</p>\n                        </div>\n                        <div mbr-buttons mbr-theme-style=\"display-4\" class=\"mbr-section-btn\" mbr-if=\"showButtons\" data-toolbar=\"-mbrBtnMove\"><a class=\"btn btn-secondary\" href=\"https://mobiri.se\" data-app-placeholder=\"Type Text\">\n                                Нет, но хочу лучше\n                            </a>\n                            <a class=\"btn btn-warning\" href=\"https://mobiri.se\" data-app-placeholder=\"Type Text\">\n                                Да, получить план чекапа\n                            </a></div>\n                        <div class=\"people-wrapper\" mbr-if=\"showPeople || showRating\">\n                            <div class=\"people-wrap\">\n                                <div class=\"images-wrapper\" mbr-if=\"showPeople\">\n                                    <img src=\"@PROJECT_PATH@/assets/images/image1.jpg\" alt=\"Mobirise\">\n                                    <img src=\"@PROJECT_PATH@/assets/images/image18.jpg\" alt=\"Mobirise\" mbr-if=\"card > 1\">\n                                    <img src=\"@PROJECT_PATH@/assets/images/image17.jpg\" alt=\"Mobirise\" mbr-if=\"card > 2\">\n                                    <img src=\"@PROJECT_PATH@/assets/images/image20.jpg\" alt=\"Mobirise\" mbr-if=\"card > 3\">\n                                </div>\n                                <div class=\"rating-content\">\n                                    <div class=\"rating-wrapper\" mbr-if=\"showRating\">\n                                        <div class=\"rating-wrap\">\n                                            <p class=\"mbr-rating mbr-fonts-style\" mbr-theme-style=\"display-4\" data-app-selector=\".mbr-rating, .rating-wrapper, .people-wrapper\">\n                                                ★\n                                            </p>\n                                            <p class=\"mbr-rating mbr-fonts-style\" mbr-if=\"rating > 1\" mbr-theme-style=\"display-4\" data-app-selector=\".mbr-rating, .rating-wrapper, .people-wrapper\">\n                                                ★\n                                            </p>\n                                            <p class=\"mbr-rating mbr-fonts-style\" mbr-if=\"rating > 2\" mbr-theme-style=\"display-4\" data-app-selector=\".mbr-rating, .rating-wrapper, .people-wrapper\">\n                                                ★\n                                            </p>\n                                            <p class=\"mbr-rating mbr-fonts-style\" mbr-if=\"rating > 3\" mbr-theme-style=\"display-4\" data-app-selector=\".mbr-rating, .rating-wrapper, .people-wrapper\">\n                                                ★\n                                            </p>\n                                            <p class=\"mbr-rating mbr-fonts-style\" mbr-if=\"rating > 4\" mbr-theme-style=\"display-4\" data-app-selector=\".mbr-rating, .rating-wrapper, .people-wrapper\">\n                                                ★\n                                            </p>\n                                        </div>\n                                    </div>\n                                    <p class=\"mbr-people mbr-fonts-style\" mbr-theme-style=\"display-4\" mbr-if=\"showPeopleText\" data-app-selector=\".mbr-people, .people-wrapper\">Улучшили качество жизни</p>\n                                </div>\n                            </div>\n                        </div>\n                        <div class=\"image-wrapper\" mbr-if=\"showImage\">\n                            <div class=\"image-wrap\">\n                                <img src=\"@ADDONS_PATH@/healthm5/components/_images/background2.jpg\" alt=\"Mobirise\">\n                            </div>\n                        </div>\n                    </div>\n                </div>\n            </div>\n        </div>\n    </div>\n</section>",
           "_cid": "uwPn7JdAOr",
+          "_anchor": "header01-3",
           "_protectedParams": [],
           "_global": false,
           "_once": false,
-          "_params": {},
-          "_anchor": "header01-3"
+          "_params": {}
+        },
+        {
+          "alias": false,
+          "_styles": {
+            "& when not (@fullScreen)": {
+              "padding-top": "(@paddingTop * 1rem)",
+              "padding-bottom": "(@paddingBottom * 1rem)"
+            },
+            "& when (@bg-type = 'color')": {
+              "background-color": "@bg-value"
+            },
+            "& when (@bg-type = 'image')": {
+              "background-image": "url(@bg-value)"
+            },
+            ".mbr-fallback-image.disabled": {
+              "display": "none"
+            },
+            ".mbr-fallback-image": {
+              "display": "block",
+              "background-size": "cover",
+              "background-position": "center center",
+              "width": "100%",
+              "height": "100%",
+              "position": "absolute",
+              "top": "0",
+              "& when (@bg-type = 'video')": {
+                "background-image": "url(@fallBackImage)"
+              }
+            },
+            ".content-wrapper": {
+              "position": "relative",
+              "padding": "100px 100px 105px",
+              "border-radius": "30px",
+              "background-color": "@container",
+              "overflow": "hidden",
+              "@media (max-width: 992px)": {
+                "padding": "46px 22px"
+              },
+              ".content-wrap": {
+                "position": "relative",
+                "z-index": "1",
+                ".mbr-desc": {
+                  "margin-bottom": "10px"
+                },
+                ".mbr-section-title": {
+                  "margin-bottom": "56px",
+                  "span": {
+                    "color": "@title"
+                  },
+                  "@media (max-width: 992px)": {
+                    "margin-bottom": "12px"
+                  }
+                },
+                ".mbr-section-btn": {
+                  ".btn": {
+                    "margin-bottom": "0"
+                  }
+                }
+              },
+              ".image-wrapper": {
+                "position": "absolute",
+                "right": "-50px",
+                "bottom": "-150px",
+                "width": "400px",
+                "height": "400px",
+                "@media (max-width: 992px)": {
+                  "right": "-20px",
+                  "bottom": "-75px",
+                  "width": "200px",
+                  "height": "200px"
+                },
+                "img": {
+                  "position": "absolute",
+                  "width": "400px",
+                  "height": "400px",
+                  "border-radius": "100% !important",
+                  "object-fit": "cover",
+                  "@media (max-width: 992px)": {
+                    "width": "200px",
+                    "height": "200px"
+                  }
+                }
+              }
+            },
+            ".mbr-section-title": {
+              "color": "#212529"
+            },
+            ".mbr-desc": {
+              "color": "#212529"
+            }
+          },
+          "_name": "article02",
+          "_sourceTheme": "flavorm5",
+          "_customHTML": "<section data-bs-version=\"5.1\" class=\"article02 flavorm5\" group=\"Article\" mbr-class=\"{\n    'mbr-fullscreen': fullScreen,\n    'mbr-parallax-background': bg.parallax}\">\n    <mbr-parameters>\n        <header>Size</header>\n        <input type=\"checkbox\" title=\"Full Screen\" name=\"fullScreen\">\n        <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\">\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"12\" step=\"1\" value=\"5\" condition=\"fullScreen == false\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"12\" step=\"1\" value=\"5\" condition=\"fullScreen == false\">\n        <header>Show/Hide</header>\n        <input type=\"checkbox\" title=\"Title\" name=\"showTitle\" checked>\n        <input type=\"color\" title=\"Secondary Color\" value=\"#ff8576\" name=\"title\" condition=\"showTitle\" selected>\n        <input type=\"checkbox\" title=\"Description\" name=\"showDesc\">\n        <input type=\"checkbox\" title=\"Buttons\" name=\"showButtons\" checked>\n        <input type=\"checkbox\" title=\"Image\" name=\"showImage\">\n        <input type=\"color\" title=\"Container BG\" value=\"#ffffff\" name=\"container\" selected>\n        <header>Background</header>\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" title=\"Image\" value=\"@ADDONS_PATH@/flavorm5/components/_images/background1.jpg\">\n            <input type=\"color\" title=\"Color\" value=\"#b2d0d0\" selected>\n        </fieldset>\n        <header condition=\"bg.type === 'video'\">Fallback Image</header>\n        <input type=\"image\" title=\"Fallback Image\" value=\"@ADDONS_PATH@/flavorm5/components/_images/background1.jpg\" name=\"fallBackImage\" condition=\"bg.type === 'video'\">\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\">\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#ffffff\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.8\" condition=\"overlay && bg.type !== 'color'\">\n    </mbr-parameters>\n\n    <div class=\"mbr-fallback-image disabled\" mbr-if=\"bg.type == 'video'\"></div>\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type !== 'color'\" opacity=\"{{overlayOpacity}}\" bg-color=\"{{overlayColor}}\"></div>\n\n    <div mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\">\n        <div class=\"row\">\n            <div class=\"col-12\">\n                <div class=\"content-wrapper\">\n                    <div class=\"content-wrap\">\n                        <p class=\"mbr-desc mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showDesc\" data-app-selector=\".mbr-desc\">\n                            <b>About the experience</b>\n                        </p>\n                        <h2 class=\"mbr-section-title mbr-fonts-style\" data-app-selector=\".mbr-section-title, .mbr-section-btn\" mbr-theme-style=\"display-1\" mbr-if=\"showTitle\"><b><span><b>Встречаете Новый год вдали от родных?</b></span>&nbsp;Подарите заботу о здоровье с нашими сертификатами на индивидуальный план медицинского обследования —&nbsp;&nbsp;<span><b>лучший подарок для ваших близких!</b></span></b></h2>\n                        <div mbr-buttons mbr-theme-style=\"display-4\" class=\"mbr-section-btn\" mbr-if=\"showButtons\" data-toolbar=\"-mbrBtnMove\"><a class=\"btn btn-secondary\" href=\"https://mobiri.se\" data-app-placeholder=\"Type Text\">Заказать сертификат</a></div>\n                    </div>\n                    <div class=\"image-wrapper\" mbr-if=\"showImage\">\n                        <img src=\"@PROJECT_PATH@/assets/images/shutterstock-1561815368.webp\" alt=\"Mobirise\">\n                    </div>\n                </div>\n            </div>\n        </div>\n    </div>\n</section>",
+          "_cid": "uwQJ4wQit1",
+          "_anchor": "article02-7",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
         },
         {
           "alias": false,
@@ -1468,11 +1568,11 @@
           "_sourceTheme": "flexm5",
           "_customHTML": "<section data-bs-version=\"5.1\" class=\"article01 flexm5\" group=\"Article\" mbr-class=\"{\n    'mbr-fullscreen': fullScreen,\n    'mbr-parallax-background': bg.parallax}\">\n    <mbr-parameters>\n        <header>Size</header>\n        <input type=\"checkbox\" title=\"Full Screen\" name=\"fullScreen\">\n        <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\" checked>\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"12\" step=\"1\" value=\"5\" condition=\"fullScreen == false\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"12\" step=\"1\" value=\"5\" condition=\"fullScreen == false\">\n        <input type=\"checkbox\" title=\"Reverse\" name=\"reverseContent\">\n        <header>Show/Hide</header>\n        <input type=\"checkbox\" title=\"Description\" name=\"showDesc\">\n        <input type=\"checkbox\" title=\"Title\" name=\"showTitle\" checked>\n        <input type=\"checkbox\" title=\"Text\" name=\"showText\" checked>\n        <input type=\"checkbox\" title=\"Buttons\" name=\"showButtons\" checked>\n        <header>Background</header>\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" title=\"Image\" value=\"../_images/background1.jpg\" parallax selected>\n            <input type=\"color\" title=\"Color\" value=\"#F2F2F2\">\n        </fieldset>\n        <header condition=\"bg.type === 'video'\">Fallback Image</header>\n        <input type=\"image\" title=\"Fallback Image\" value=\"../_images/background1.jpg\" name=\"fallBackImage\" condition=\"bg.type === 'video'\">\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#F2F2F2\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.6\" condition=\"overlay && bg.type !== 'color'\">\n    </mbr-parameters>\n\n    <div class=\"mbr-fallback-image disabled\" mbr-if=\"bg.type == 'video'\"></div>\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type !== 'color'\" opacity=\"{{overlayOpacity}}\" bg-color=\"{{overlayColor}}\"></div>\n\n    <div mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\">\n        <div class=\"row items-wrapper\" mbr-class=\"{'flex-row-reverse' : reverseContent}\">\n            <div class=\"col-12 col-lg-5 card\">\n\t\t\t\t<div class=\"image-wrapper\">\n\t\t\t\t\t<img src=\"@PROJECT_PATH@/assets/images/8653216522b152183e714ddabd381d33-1000x386.png\" alt=\"Mobirise\">\n\t\t\t\t</div>\n            </div>\n            <div class=\"col-12 col-lg-6 card\">\n                <div class=\"content-wrapper\">\n                    <p class=\"mbr-desc mbr-fonts-style\" mbr-theme-style=\"display-4\" mbr-if=\"showDesc\" data-app-selector=\".mbr-desc\">Синдром хронической усталости:</p>\n                    <h2 class=\"mbr-section-title mbr-fonts-style\" data-app-selector=\".mbr-section-title, .mbr-section-btn\" mbr-theme-style=\"display-5\" mbr-if=\"showTitle\"><b>Синдром хронической усталости: что это и почему важно пройти обследование?</b></h2>\n                    <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-4\" mbr-if=\"showText\" data-app-selector=\".mbr-text\">Состояние, характеризующееся постоянной слабостью, снижением работоспособности и утомляемостью, которые не проходят даже после полноценного отдыха. Это заболевание становится все более распространенным: по оценкам, около 17 миллионов человек в мире страдают СХУ.</p>\n                    <div mbr-buttons mbr-theme-style=\"display-4\" class=\"mbr-section-btn\" mbr-if=\"showButtons\" data-toolbar=\"-mbrBtnMove\"><a class=\"btn btn-secondary\" href=\"https://mobiri.se\" data-app-placeholder=\"Type Text\">Узнать больше</a></div>\n                </div>\n            </div>\n        </div>\n    </div>\n</section>",
           "_cid": "uwJBM4ImEL",
+          "_anchor": "article01-1",
           "_protectedParams": [],
           "_global": false,
           "_once": false,
-          "_params": {},
-          "_anchor": "article01-1"
+          "_params": {}
         },
         {
           "alias": false,

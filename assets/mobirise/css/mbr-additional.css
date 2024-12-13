@@ -1735,6 +1735,90 @@ img,
   text-align: center;
   color: #ffc263;
 }
+.cid-uwQJ4wQit1 {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  background-color: #b2d0d0;
+}
+.cid-uwQJ4wQit1 .mbr-fallback-image.disabled {
+  display: none;
+}
+.cid-uwQJ4wQit1 .mbr-fallback-image {
+  display: block;
+  background-size: cover;
+  background-position: center center;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+}
+.cid-uwQJ4wQit1 .content-wrapper {
+  position: relative;
+  padding: 100px 100px 105px;
+  border-radius: 30px;
+  background-color: #ffffff;
+  overflow: hidden;
+}
+@media (max-width: 992px) {
+  .cid-uwQJ4wQit1 .content-wrapper {
+    padding: 46px 22px;
+  }
+}
+.cid-uwQJ4wQit1 .content-wrapper .content-wrap {
+  position: relative;
+  z-index: 1;
+}
+.cid-uwQJ4wQit1 .content-wrapper .content-wrap .mbr-desc {
+  margin-bottom: 10px;
+}
+.cid-uwQJ4wQit1 .content-wrapper .content-wrap .mbr-section-title {
+  margin-bottom: 56px;
+}
+.cid-uwQJ4wQit1 .content-wrapper .content-wrap .mbr-section-title span {
+  color: #ff8576;
+}
+@media (max-width: 992px) {
+  .cid-uwQJ4wQit1 .content-wrapper .content-wrap .mbr-section-title {
+    margin-bottom: 12px;
+  }
+}
+.cid-uwQJ4wQit1 .content-wrapper .content-wrap .mbr-section-btn .btn {
+  margin-bottom: 0;
+}
+.cid-uwQJ4wQit1 .content-wrapper .image-wrapper {
+  position: absolute;
+  right: -50px;
+  bottom: -150px;
+  width: 400px;
+  height: 400px;
+}
+@media (max-width: 992px) {
+  .cid-uwQJ4wQit1 .content-wrapper .image-wrapper {
+    right: -20px;
+    bottom: -75px;
+    width: 200px;
+    height: 200px;
+  }
+}
+.cid-uwQJ4wQit1 .content-wrapper .image-wrapper img {
+  position: absolute;
+  width: 400px;
+  height: 400px;
+  border-radius: 100% !important;
+  object-fit: cover;
+}
+@media (max-width: 992px) {
+  .cid-uwQJ4wQit1 .content-wrapper .image-wrapper img {
+    width: 200px;
+    height: 200px;
+  }
+}
+.cid-uwQJ4wQit1 .mbr-section-title {
+  color: #212529;
+}
+.cid-uwQJ4wQit1 .mbr-desc {
+  color: #212529;
+}
 .cid-ugTZ8IBj6F {
   padding-top: 3rem;
   padding-bottom: 5rem;

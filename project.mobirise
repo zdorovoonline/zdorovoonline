@@ -1,6 +1,6 @@
 {
   "settings": {
-    "currentPage": "page2.html",
+    "currentPage": "morningroutine.html",
     "theme": {
       "name": "flexm5",
       "title": "FlexM5",
@@ -73,14 +73,14 @@
       "rejectText": "REJECT"
     },
     "favicon": false,
-    "mbrsiteDomain": "shtjyo22xr",
+    "mbrsiteDomain": "fvhiory9cx",
     "usedWebp": false,
     "robotsSwitcher": false,
     "sitemapSwitcher": false,
     "sitemapSwitcherAuto": false,
     "siteUrl": false,
     "gdpr": false,
-    "uniqCompNum": 35,
+    "uniqCompNum": 40,
     "versionPublish": "5.9.0",
     "screenshot": "screenshot.png"
   },
@@ -3267,7 +3267,7 @@
         }
       ]
     },
-    "page2.html": {
+    "articles.html": {
       "settings": {
         "title": "Статьи",
         "meta_descr": "Чувствуете усталость и упадок сил?\nНачните новый год здорово с индивидуальным планом чекапа!",
@@ -3275,7 +3275,7 @@
         "footer_custom": "",
         "html_before": "",
         "meta_image": "@PROJECT_PATH@/assets/images/8653216522b152183e714ddabd381d33-1000x386.png",
-        "order": "3"
+        "order": "4"
       },
       "components": [
         {
@@ -4728,7 +4728,7 @@
         }
       ]
     },
-    "page3.html": {
+    "morningroutine.html": {
       "settings": {
         "title": "Простые утренние привычки для здоровья и энергии",
         "meta_descr": "Чувствуете усталость и упадок сил?\nНачните новый год здорово с индивидуальным планом чекапа!",
